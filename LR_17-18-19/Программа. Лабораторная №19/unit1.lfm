@@ -1,0 +1,229 @@
+object Form1: TForm1
+  Left = 596
+  Height = 297
+  Top = 225
+  Width = 344
+  BorderStyle = bsSingle
+  Caption = 'Калькулятор'
+  ClientHeight = 297
+  ClientWidth = 344
+  Color = 15137218
+  LCLVersion = '3.0.0.3'
+  object result_field: TEdit
+    Left = 24
+    Height = 28
+    Top = 8
+    Width = 296
+    BidiMode = bdRightToLeft
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Book Antiqua'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object num1: TButton
+    Left = 24
+    Height = 40
+    Top = 168
+    Width = 64
+    Caption = '1'
+    TabOrder = 1
+    OnClick = ClickBut
+  end
+  object num2: TButton
+    Left = 96
+    Height = 40
+    Top = 168
+    Width = 64
+    Caption = '2'
+    TabOrder = 2
+    OnClick = ClickBut
+  end
+  object num3: TButton
+    Left = 168
+    Height = 40
+    Top = 168
+    Width = 64
+    Caption = '3'
+    TabOrder = 3
+    OnClick = ClickBut
+  end
+  object num4: TButton
+    Left = 24
+    Height = 40
+    Top = 136
+    Width = 64
+    Caption = '4'
+    TabOrder = 4
+    OnClick = ClickBut
+  end
+  object num5: TButton
+    Left = 96
+    Height = 40
+    Top = 136
+    Width = 64
+    Caption = '5'
+    TabOrder = 5
+    OnClick = ClickBut
+  end
+  object num6: TButton
+    Left = 168
+    Height = 40
+    Top = 136
+    Width = 64
+    Caption = '6'
+    TabOrder = 6
+    OnClick = ClickBut
+  end
+  object num7: TButton
+    Left = 24
+    Height = 40
+    Top = 104
+    Width = 64
+    Caption = '7'
+    Color = clHighlight
+    TabOrder = 7
+    OnClick = ClickBut
+  end
+  object num8: TButton
+    Left = 96
+    Height = 40
+    Top = 104
+    Width = 64
+    Caption = '8'
+    TabOrder = 8
+    OnClick = ClickBut
+  end
+  object num9: TButton
+    Left = 168
+    Height = 40
+    Top = 104
+    Width = 64
+    Caption = '9'
+    TabOrder = 9
+    OnClick = ClickBut
+  end
+  object minus: TButton
+    Left = 240
+    Height = 40
+    Top = 168
+    Width = 80
+    Caption = '-'
+    TabOrder = 10
+    OnClick = ClickZnak
+  end
+  object proizv: TButton
+    Left = 240
+    Height = 40
+    Top = 136
+    Width = 80
+    Caption = '*'
+    TabOrder = 11
+    OnClick = ClickZnak
+  end
+  object delenie: TButton
+    Left = 168
+    Height = 40
+    Top = 72
+    Width = 64
+    Caption = '/'
+    TabOrder = 12
+    OnClick = ClickZnak
+  end
+  object num0: TButton
+    Left = 24
+    Height = 40
+    Top = 200
+    Width = 136
+    Caption = '0'
+    TabOrder = 13
+    OnClick = ClickBut
+  end
+  object zapytaia: TButton
+    Left = 168
+    Height = 40
+    Top = 200
+    Width = 64
+    Caption = ','
+    TabOrder = 14
+    OnClick = ClickBut
+  end
+  object plus: TButton
+    Left = 240
+    Height = 40
+    Top = 200
+    Width = 80
+    Caption = '+'
+    TabOrder = 15
+    OnClick = ClickZnak
+  end
+  object result: TButton
+    Left = 24
+    Height = 40
+    Top = 232
+    Width = 296
+    Caption = '='
+    TabOrder = 16
+    OnClick = resultClick
+  end
+  object del: TButton
+    Left = 240
+    Height = 40
+    Top = 104
+    Width = 80
+    Caption = '1/x'
+    TabOrder = 17
+    OnClick = delClick
+  end
+  object sqrt: TButton
+    Left = 240
+    Height = 40
+    Top = 72
+    Width = 80
+    Caption = 'x^2'
+    TabOrder = 18
+    OnClick = sqrtClick
+  end
+  object sqrtx: TButton
+    Left = 96
+    Height = 40
+    Top = 72
+    Width = 64
+    Caption = 'Кор'
+    TabOrder = 19
+    OnClick = sqrtxClick
+  end
+  object c: TButton
+    Left = 192
+    Height = 32
+    Top = 40
+    Width = 128
+    Caption = 'c'
+    TabOrder = 20
+    OnClick = cClick
+  end
+  object ce: TButton
+    Left = 24
+    Height = 40
+    Top = 72
+    Width = 64
+    Caption = 'ce'
+    Color = 9983
+    TabOrder = 21
+    OnClick = ceClick
+  end
+  object del_las_number: TButton
+    Left = 24
+    Height = 32
+    Top = 40
+    Width = 160
+    Caption = '<-'
+    TabOrder = 22
+    OnClick = del_las_numberClick
+  end
+end

@@ -1,0 +1,104 @@
+object fMain: TfMain
+  Left = 1011
+  Height = 382
+  Top = 292
+  Width = 511
+  Caption = 'Пример работы с подпрограммами'
+  ClientHeight = 382
+  ClientWidth = 511
+  LCLVersion = '3.0.0.3'
+  object Label1: TLabel
+    Left = 88
+    Height = 17
+    Top = 43
+    Width = 150
+    Caption = 'Введите любое число:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsItalic]
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 248
+    Height = 23
+    Top = 43
+    Width = 152
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 88
+    Height = 25
+    Top = 80
+    Width = 304
+    Caption = 'Пример удвоения №1'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 88
+    Height = 25
+    Top = 128
+    Width = 304
+    Caption = 'Пример удвоения №2'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 88
+    Height = 25
+    Top = 176
+    Width = 304
+    Caption = 'Пример удвоения №3'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 88
+    Height = 25
+    Top = 224
+    Width = 304
+    Caption = 'Пример удвоения №4'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 88
+    Height = 25
+    Top = 272
+    Width = 304
+    Caption = 'Пример удвоения №5'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = Button5Click
+  end
+end
