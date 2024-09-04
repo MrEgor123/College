@@ -1,0 +1,65 @@
+object fMain: TfMain
+  Left = 411
+  Height = 405
+  Top = 250
+  Width = 894
+  BorderStyle = bsDialog
+  Caption = 'Автомобильный справочник'
+  ClientHeight = 405
+  ClientWidth = 894
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.0.0.3'
+  object Panel1: TPanel
+    Left = 0
+    Height = 1
+    Top = 0
+    Width = 894
+    Align = alTop
+    TabOrder = 0
+  end
+  object bAdd: TSpeedButton
+    Left = 0
+    Height = 22
+    Top = 0
+    Width = 210
+    Caption = 'Добавить автомобиль'
+    OnClick = bAddClick
+  end
+  object bEdit: TSpeedButton
+    Left = 232
+    Height = 22
+    Top = 0
+    Width = 208
+    Caption = 'Редактировать характеристики'
+    OnClick = bEditClick
+  end
+  object bDel: TSpeedButton
+    Left = 464
+    Height = 22
+    Top = 0
+    Width = 205
+    Caption = 'Удалить автомобиль'
+    OnClick = bDelClick
+  end
+  object bSort: TSpeedButton
+    Left = 688
+    Height = 22
+    Top = 0
+    Width = 204
+    Caption = 'Отсортировать'
+    OnClick = bSortClick
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 379
+    Top = 24
+    Width = 1128
+    ColCount = 6
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = bEditClick
+  end
+end

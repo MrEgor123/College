@@ -1,0 +1,131 @@
+object fEdit: TfEdit
+  Left = 861
+  Height = 474
+  Top = 319
+  Width = 516
+  BorderStyle = bsDialog
+  Caption = 'Редактор автомобиля'
+  ClientHeight = 474
+  ClientWidth = 516
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.0.0.3'
+  object eeName: TLabel
+    Left = 7
+    Height = 16
+    Top = 7
+    Width = 206
+    Caption = 'Укажите названиие автомобиля:'
+    ParentColor = False
+  end
+  object eName: TEdit
+    Left = 7
+    Height = 22
+    Top = 27
+    Width = 317
+    TabOrder = 0
+  end
+  object eeCountry: TLabel
+    Left = 7
+    Height = 16
+    Top = 60
+    Width = 202
+    Caption = 'Укажите страну-производитель'
+    ParentColor = False
+  end
+  object eCountry: TEdit
+    Left = 7
+    Height = 22
+    Top = 80
+    Width = 175
+    TabOrder = 1
+  end
+  object eeNote: TLabel
+    Left = 8
+    Height = 16
+    Top = 280
+    Width = 118
+    Caption = 'Есть ли в наличии:'
+    ParentColor = False
+  end
+  object CBNote: TComboBox
+    Left = 7
+    Height = 20
+    Top = 312
+    Width = 175
+    ItemHeight = 19
+    Items.Strings = (
+      'Да'
+      'Нет'
+    )
+    TabOrder = 2
+  end
+  object bSave: TBitBtn
+    Left = 56
+    Height = 30
+    Top = 368
+    Width = 192
+    Caption = 'Сохранить'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object bCancel: TBitBtn
+    Left = 280
+    Height = 30
+    Top = 368
+    Width = 184
+    Cancel = True
+    Caption = 'Не сохранять'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object eeSpeed: TLabel
+    Left = 8
+    Height = 16
+    Top = 112
+    Width = 214
+    Caption = 'Укажите мощность двигателя, лс:'
+  end
+  object eSpeed: TEdit
+    Left = 8
+    Height = 22
+    Top = 136
+    Width = 88
+    NumbersOnly = True
+    TabOrder = 5
+    OnChange = eSpeedChange
+  end
+  object eeColor: TLabel
+    Left = 8
+    Height = 16
+    Top = 169
+    Width = 89
+    Caption = 'Укажите цвет:'
+  end
+  object eColor: TEdit
+    Left = 7
+    Height = 22
+    Top = 192
+    Width = 156
+    TabOrder = 6
+  end
+  object eeCost: TLabel
+    Left = 8
+    Height = 16
+    Top = 224
+    Width = 268
+    Caption = 'Укажите стоимость автомобиля, млн. руб:'
+  end
+  object eCost: TEdit
+    Left = 8
+    Height = 22
+    Top = 248
+    Width = 155
+    NumbersOnly = True
+    TabOrder = 7
+    OnChange = eCostChange
+  end
+end
