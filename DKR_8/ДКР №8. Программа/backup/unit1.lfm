@@ -1,0 +1,139 @@
+object TTTTimer: TTTTTimer
+  Left = 764
+  Height = 382
+  Top = 245
+  Width = 515
+  BorderStyle = bsSingle
+  Caption = 'Timer'
+  ClientHeight = 382
+  ClientWidth = 515
+  LCLVersion = '3.0.0.3'
+  object Clock: TLabel
+    Left = 104
+    Height = 104
+    Top = 40
+    Width = 336
+    AutoSize = False
+    Caption = '00:00:00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -85
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Clear: TButton
+    Left = 24
+    Height = 59
+    Top = 301
+    Width = 91
+    Caption = 'Сброс'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = '.SF NS'
+    ParentFont = False
+    TabOrder = 0
+    OnClick = ClearClick
+  end
+  object Start: TButton
+    Left = 24
+    Height = 40
+    Top = 168
+    Width = 88
+    Caption = 'Старт'
+    Color = clGradientInactiveCaption
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = '.SF NS'
+    ParentFont = False
+    TabOrder = 1
+    OnClick = StartClick
+  end
+  object Exitt: TBitBtn
+    Left = 392
+    Height = 50
+    Top = 304
+    Width = 107
+    Caption = '&Выйти'
+    Kind = bkClose
+    ModalResult = 11
+    OnClick = ExittClick
+    TabOrder = 2
+  end
+  object Hour: TEdit
+    Left = 256
+    Height = 22
+    Top = 208
+    Width = 80
+    ParentShowHint = False
+    TabOrder = 3
+    OnChange = HourChange
+  end
+  object HourL: TLabel
+    Left = 176
+    Height = 22
+    Top = 208
+    Width = 51
+    Caption = 'Часы:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = '.SF NS'
+    ParentFont = False
+  end
+  object MinutsL: TLabel
+    Left = 152
+    Height = 22
+    Top = 240
+    Width = 75
+    Caption = 'Минуты:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = '.SF NS'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Minutes: TEdit
+    Left = 256
+    Height = 22
+    Top = 240
+    Width = 80
+    TabOrder = 4
+    OnChange = MinutesChange
+  end
+  object SecondsL: TLabel
+    Left = 144
+    Height = 22
+    Top = 272
+    Width = 83
+    Caption = 'Секунды:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = '.SF NS'
+    ParentFont = False
+  end
+  object Seconds: TEdit
+    Left = 256
+    Height = 22
+    Top = 272
+    Width = 80
+    TabOrder = 5
+    OnChange = SecondsChange
+  end
+  object Pause: TButton
+    Left = 392
+    Height = 41
+    Top = 167
+    Width = 96
+    Caption = 'Пауза'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = '.SF NS'
+    ParentFont = False
+    TabOrder = 6
+    OnClick = PauseClick
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 30
+    Top = 43
+  end
+end
